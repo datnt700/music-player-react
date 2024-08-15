@@ -80,25 +80,15 @@ const MusicCard = ({
         <button className="btn prev" onClick={skipBack}>
           <img src={prevButton} alt="button" />
         </button>
-        {isplaying ? (
-          <button className="btn main">
-            <img
-              className="start"
-              src={stopButton}
-              alt=""
-              onClick={handlePlayButton}
-            />
-          </button>
-        ) : (
-          <button className="btn main">
-            <img
-              className="start"
-              src={playButton}
-              alt=""
-              onClick={handlePlayButton}
-            />
-          </button>
-        )}
+
+        <button className="btn main">
+          <img
+            className="start"
+            src={isplaying ? playButton : stopButton}
+            alt=""
+            onClick={handlePlayButton}
+          />
+        </button>
 
         <button className="btn next" onClick={skipNext}>
           <img className="right" src={nextButton} alt="" />
