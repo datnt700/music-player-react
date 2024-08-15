@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react';
 import { useState } from 'react';
-import MusicCard from '../components/musicCard';
+import MusicCard from '../components/MusicCard';
 import './App.css';
 import source1 from './assets/lost-in-city-lights-145038.mp3';
 import source2 from './assets/forest-lullaby-110624.mp3';
